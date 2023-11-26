@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-554FCB95');</script>
+    <!-- End Google Tag Manager -->
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -14,17 +21,21 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-554FCB95"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
         <div class="container">
-            <a class="navbar-brand" href="#">Prachi Oza</a>
+            <a class="navbar-brand" href="#">My Blog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -47,33 +58,32 @@
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text scroll-fade">
                 <h2 class="hero_title">Hello, I am Prachi!</h2>
-                <p class="hero_desc">I'm a cybersecurity specialist interested in all things tech.</p>
+                <p class="hero_desc">I'm a <span id="dynamic-text"></span><span id="cursor">|</span></p>
             </div>
             </div>
         </div>
     </section>
-
+    <!--  ADD A BLOG PAGE AND MAKE IT A 
+        'WORK UNDER PROGRESS' TYPE OF THING. UPLOAD NEW WEBSITE AFTER ADDING GOOGLE TAG THINGY. FINISH THIS BY TOMORROW.-->
     <!-- about section-->
     <section id="about">
         <div class="container mt-4 pt-4">
             <h1 class="text-center">About Me</h1>
             <div class="row mt-4">
-                <div class="col-lg-3">
+                <div class="col-lg-3 reveal fade-left">
                     <img src="images/about.jpeg" class= "imageAboutPage" alt="">
                 </div>
 
-                <div class="col-lg-8">
-                    <p> I'm a recent Cybersecurity graduate student from the University of Maryland, College Park. Having had two years of experience in managing networks, creating softwares and building security architectures within the cloud, my curiosity drives me to learn more about my interests. 
-                        I tend to be a perfectionist in whatever work I do and believe in good time management. 
-                        I have built many projects in the fields on Artificial Intelligence and Cyberscurity, and am well-versed in many programming languages, tools as well as frameworks.
+                <div class="col-lg-8 reveal fade-right">
+                    <p> I'm a recent Cybersecurity graduate student from the University of Maryland, College Park. Having had two years of experience in managing networks, creating softwares and building security architectures within the cloud, my curiosity drives me to learn more about my interests. I tend to be a perfectionist in whatever work I do and believe in good time management. I have built many projects in the fields on Artificial Intelligence and Cyberscurity, and am well-versed in many programming languages, tools as well as frameworks.
                     </p>
                     <p></p>
                     <p></p>
                     <div class="row mt-3">
                         <h3>Education</h3>
-                        <div class="col-md-8">
+                        <div class="col-md-8 reveal fade-right">
                             <ul>
                                 <li>Master of Engineering- University of Maryland, College Park
                                 </br>
@@ -95,7 +105,7 @@
     <section id="services">
         <div class="container">
             <h1 class="text-center">Professional Experience</h1>
-            <div class="row">
+            <div class="row reveal fade-bottom">
               <div class="col-lg-4 mt-4">
                     <div class="box servicesText">
                         <div class="card-body">
@@ -103,9 +113,7 @@
                             <h4 class="card-title mt-3">University of Maryland </h4>
                             <p class="card-title mt-3" style="font-style: italic">Grader Assistant, Feb. 2023 - May 2023</p>
                             <p class="card-text mt-3">
-                                Aided and assisted the instructor for the course "Machine Learning Techniques applied to Cybersecurity" in grading homework, lab work, examinations 
-                                and project papers pertaining to topics such regression techniques, malware detection using machine learning, and reinforcement learning. Created a Python 
-                                environment for faster grading and optimized output analysis.
+                                Aided and assisted the instructor for the course "Machine Learning Techniques applied to Cybersecurity" in grading homework, lab work, examinations and project papers pertaining to topics such regression techniques, malware detection using machine learning, and reinforcement learning. Created a Python environment for faster grading and optimized output analysis.
                             </p>
                         </div>
                     </div>
@@ -118,8 +126,7 @@
                             <p class="card-title mt-3" style="font-style: italic">Security Operations Monitor, Sept. 2022 - Feb. 2023</p>
                             <p class="card-text mt-3">
                                 Monitoring over seven hundred cameras throughout the university's campus and ensuring the safety of the 
-                                public by supporting the local law enforcement. Other daily responsibilities include responding to fire alarms and reading license plates of
-                                potential threats using software. 
+                                public by supporting the local law enforcement. Other daily responsibilities include responding to fire alarms and reading license plates of potential threats using software. 
                             </p>
                         </div>
                     </div>
@@ -141,7 +148,7 @@
                 
             </div>
 
-            <div class="row">
+            <div class="row reveal fade-bottom">
               <div class="col-lg-4 mt-4">
                     <div class="box servicesText">
                         <div class="card-body">
@@ -150,9 +157,7 @@
                             <p class="card-title mt-3" style="font-style: italic">Apprentice Software Engineer, June 2020 - May 2021</p>
                             <p class="card-text mt-3">
                                 As an apprentice engineer at the organization, my primary role was to aid the software development team in
-                                creating and maintaining their user application- Tilt. I had helped develop their login, bookings, etc modules of the application by making use of
-                                schemes and programming languages such as token based authentication, CSS, Java, and JavaScript. Additionally, I had also aided in the
-                                developement of the backend database which made use of SQL servers and nodejs.
+                                creating and maintaining their user application- Tilt. I had helped develop their login, bookings, etc modules of the application by making use of schemes and programming languages such as token based authentication, CSS, Java, and JavaScript. Additionally, I had also aided in the developement of the backend database which made use of SQL servers and nodejs.
                             </p>
                         </div>
                     </div>
@@ -165,8 +170,7 @@
                             <p class="card-title mt-3" style="font-style: italic">Cybersecurity intern, Jan 2020 - June 2020</p>
                             <p class="card-text mt-3">
                                 Under the tutelage of my supervisor, a vulnerability scanner was developed for auditing purposes. The scanner was
-                                particularly developed for industrial control systems using tools from Kali Linux and the Python programming language. The objecive of this
-                                project was to scan for vulnerabilities that could have been present in the computer systems used for controlling the plant and machinery.
+                                particularly developed for industrial control systems using tools from Kali Linux and the Python programming language. The objecive of this project was to scan for vulnerabilities that could have been present in the computer systems used for controlling the plant and machinery.
                             </p>
                         </div>
                     </div>
@@ -179,9 +183,7 @@
                             <p class="card-title mt-3" style="font-style: italic">Summer intern, May 2019 - June 2019</p>
                             <p class="card-text mt-3">
                                 Along with researching on the topic of big data, Apache tools used for the same and machine learning techniques,
-                                a project to detect customer churn was developed. The objective of it was to predict customer churn early on to prevent customers from
-                                abandoning the services of the company. Logistic regression techniques were made use of to create a relation between likeliness of customer
-                                churn and a set of other factors.
+                                a project to detect customer churn was developed. The objective of it was to predict customer churn early on to prevent customers from abandoning the services of the company. Logistic regression techniques were made use of to create a relation between likeliness of customer churn and a set of other factors.
                             </p>
                         </div>
                     </div>
@@ -194,16 +196,14 @@
     <section id="portfolio">
         <div class="container mt-3">
             <h1 class="text-center">Projects</h1>
-            <div class="row">
+            <div class="row reveal fade-left">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Security Code Review</h4>
                             <p class="card-text">
-                                Used analysis tools such as Sonarqube, Snyk, Serilog analyser and Roslyn analyzer to perform a secure code review on a ready to be
-                                published software in order to find any vulnerabilities that are a part of the OWASP Top 25 Most Dangerous list along with
-                                suggestions on how to fix these. Additionally, recommended some ideas for more secure coding practices.
+                                Used analysis tools such as Sonarqube, Snyk, Serilog analyser and Roslyn analyzer to perform a secure code review on a ready to be published software in order to find any vulnerabilities that are a part of the OWASP Top 25 Most Dangerous list along with suggestions on how to fix these. Additionally, recommended some ideas for more secure coding practices.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -218,10 +218,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Creating a Cloud Architecture</h4>
                             <p class="card-text">
-                                Identified weaknesses in a proposed archtitecture for a fictitious company and provided recommendations on how to mitigate aforementioned
-                                architecture to the cloud. Made use of AWS cloud services such as AWS IAM, AWS KMS, AWS Secrets Manager, AWS EC2, etc., to showcase
-                                how the implementation can be practiced by showcasing sample NACL groups, security groups and firewall rules which would make the sample
-                                application more secure and scalable.
+                                Identified weaknesses in a proposed archtitecture for a fictitious company and provided recommendations on how to mitigate aforementioned architecture to the cloud. Made use of AWS cloud services such as AWS IAM, AWS KMS, AWS Secrets Manager, AWS EC2, etc., to showcase how the implementation can be practiced by showcasing sample NACL groups, security groups and firewall rules which would make the sample application more secure and scalable.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -236,9 +233,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Digital Forensics and Analysis</h4>
                             <p class="card-text">
-                                Made use of analysis tools such as Autopsy and Volatile to perform a forensic analysis on a sample image of an operating system.
-                                Performed necessary detections pertinent to the investigation as well as to find the malwares on the image file and used Wireshark to understand
-                                and monitor the malware's behavior. Additionally, also deciphered messages sent by the malware in order to find the final form of the malware.
+                                Made use of analysis tools such as Autopsy and Volatile to perform a forensic analysis on a sample image of an operating system. Performed necessary detections pertinent to the investigation as well as to find the malwares on the image file and used Wireshark to understand and monitor the malware's behavior. Additionally, also deciphered messages sent by the malware in order to find the final form of the malware.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -248,17 +243,14 @@
                 </div>
             </div>
             <br>
-            <div class="row">
+            <div class="row reveal fade-right">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
                         <img class="card-img-top" src="images/portfolioImage4.jpeg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Penetration Testing</h4>
                             <p class="card-text">
-                                Used penetration testing techniques and tools to complete a Capture-The-Flag team exercise, essentially, in which the goal was to perform
-                                appropriate reconnaisance and attacks to reveal the identity of a 'masked DJ'. Vulnerability scanning was done using Wireshark
-                                and the Eternal Blue exploit was used to obtain a reverse TCP shell by making use of Metasploit. Password cracking was done via the tool
-                                hashcat and the final flag was retrieved upon manipulating an AWS S3 bucket.
+                                Used penetration testing techniques and tools to complete a Capture-The-Flag team exercise, essentially, in which the goal was to perform appropriate reconnaisance and attacks to reveal the identity of a 'masked DJ'. Vulnerability scanning was done using Wireshark and the Eternal Blue exploit was used to obtain a reverse TCP shell by making use of Metasploit. Password cracking was done via the tool hashcat and the final flag was retrieved upon manipulating an AWS S3 bucket.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -273,9 +265,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Binary Exploitation</h4>
                             <p class="card-text">
-                                Performed a binary exploitation of provided files in order to find appropriate vulnerabilities to exploit. Reverse engineering was
-                                performed and techniques such as buffer overflow and shellcode injection were used to do attacks such as ret2pop, ret2got and ret2bss by
-                                creating shellcode and overwriting the return address in many cases.
+                                Performed a binary exploitation of provided files in order to find appropriate vulnerabilities to exploit. Reverse engineering was performed and techniques such as buffer overflow and shellcode injection were used to do attacks such as ret2pop, ret2got and ret2bss by creating shellcode and overwriting the return address in many cases.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -290,8 +280,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Secure Backup System</h4>
                             <p class="card-text">
-                                Created a backup system in order to create a backup of files and folders on the system upon detection of a malicious software. Python
-                                programming language was used and a CNN was implemented to detect malware images and files.
+                                Created a backup system in order to create a backup of files and folders on the system upon detection of a malicious software. Python programming language was used and a CNN was implemented to detect malware images and files.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -301,17 +290,14 @@
                 </div>
             </div>
             </br>
-            <div class="row">
+            <div class="row reveal fade-left">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
                         <img class="card-img-top" src="images/portfolioImage7.jpeg" alt="Card image" style="width:100%" />
                         <div class="card-body">
                             <h4 class="card-title">Emotion Classification</h4>
                             <p class="card-text">
-                                Used the Python programming language to implement a project that can be used to detect emotions on the human face. Incorporated libraries
-                                such as OpenCV, Keras, Tensorflow, Matplotlib, etc. into the code and used deep learning techniques to create it- Convolutional Neural Networks, in particular.
-                                The created model was trained on the FER 2013 dataset and could successfully recognize emotions such as happiness, neutral, anger and
-                                surpise, and had a test accuracy of 74%.
+                                Used the Python programming language to implement a project that can be used to detect emotions on the human face. Incorporated libraries such as OpenCV, Keras, Tensorflow, Matplotlib, etc. into the code and used deep learning techniques to create it- Convolutional Neural Networks, in particular. The created model was trained on the FER 2013 dataset and could successfully recognize emotions such as happiness, neutral, anger and surpise, and had a test accuracy of 74%.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -325,8 +311,7 @@
                         <div class="card-body">
                             <h4 class="card-title">File Organizer</h4>
                             <p class="card-text">
-                                Used Java with the Apache Commons IO package to create a file organizer tool which would sort all the files on a user's system into
-                                appropriate folders based on the file's extension type.
+                                Used Java with the Apache Commons IO package to create a file organizer tool which would sort all the files on a user's system into appropriate folders based on the file's extension type.
                             </p>
                             <div class="text-center">
                                 <!--<a href="#" class="btn btn-success">Link</a>-->
@@ -360,7 +345,7 @@
                             }
                         </style>
                     </div>-->
-                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:400px;" loading="lazy">
                         <div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;">
                             <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=College+Park,+MD,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         </div>
@@ -376,40 +361,47 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Write something..."></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
-                </div>
+                <div class="col-lg-6 contact-info">
+                <!-- Form fields -->
+                <p class="email-link">
+                    <a aria-label="Email Prachi" href="mailto:prachi.oza92@gmail.com" target="_blank"
+                        data-position="top" data-tooltip="Email Prachi">
+                        <span class="email-icon"><i class="fa fa-envelope"></i></span>
+                        <span class="email-text">prachi.oza92@gmail.com</span>
+                    </a>
+                </p>
 
+                <!-- Social icons -->
+                <div class="social-icons-wrapper">
+                    <a href="https://www.instagram.com/prachioza1/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/prachioza98" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/prachi-oza/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-        </div>
+
+</div>
+
+
+
     </section>
     <!-- footer section-->
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
             <div class="social-icons mt-4">
-                <a href="/images/Resume_1.pdf" download="Resume_Prachi"><i class="fa fa-download" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/" target="https://www.instagram.com/prachioza1/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="https://twitter.com/prachioza98"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="https://www.linkedin.com/in/prachi-oza/"><i class="fab fa-linkedin"></i></a>
-
-            </div>
+    <a href="images/Resume_1.pdf" download="Prachi_Oza_resume" class="btn btn-success">
+        <i class="fa fa-download"></i> Download My Resume
+    </a>
         </div>
+    </div>
     </footer>
 
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
-
+    
 </body>
 
 </html>

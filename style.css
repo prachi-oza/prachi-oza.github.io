@@ -131,6 +131,13 @@ html {
     text-align: center;
 }
 
+#gray-footer {
+  background-color: #808080;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
 .reveal{
   position: relative;
   opacity: 0;

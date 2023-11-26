@@ -1,12 +1,38 @@
-/* display background color black on navbar scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 5rem);
+}
+
+
+/*display background color black on navbar scroll*/
 .navbarScroll.navbarDark {
     background-color: black;
 }
 
+/* Additional styling for the animated navigation bar */
+.navbarDark {
+  background-color: black;
+  /* Add any other styling for the animated navigation bar */
+}
+
+/* Add this CSS for the animated effect */
+.animated-nav-link {
+  color: #008000 !important; /* Adjust the color as needed */
+  /* Add any other styling for the animated nav links */
+  transition: color 0.3s ease-in-out; /* Adjust the transition properties as needed */
+}
+
+/* Add this CSS for highlighting the active link */
+.nav-link.active {
+  color: #008000 !important; /* Adjust the color as needed */
+  /* Add any other styling for the active nav link */
+}
+
+
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/heroImage.jpg');
+    background: url('images/whaa.gif');
     background-size:cover;
     position:relative;
 }
@@ -63,15 +89,105 @@
 .social-icons {
     font-size: 36px;
     cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .fa-download:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover {
     color: #008000;
 }
 .fab {
-    color: #000000;
+    color: #c1c9c1;
 }
+
+/* Center the email link and style it */
+.email-link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email-link a {
+    text-decoration: none;
+    color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.email-text {
+    font-size: 1.2em;
+}
+
+/* Style the social icons wrapper */
+.social-icons-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-icons-wrapper a {
+    margin: 0 10px;
+    color: darkgreen;
+    font-size: 2em;
+}
+
 /* footer styling */
 #footer {
     background-color: #808080;
     text-align: center;
+}
+
+.reveal{
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active{
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

@@ -9,23 +9,17 @@ html {
     background-color: black;
 }
 
-/* Additional styling for the animated navigation bar */
 .navbarDark {
   background-color: black;
-  /* Add any other styling for the animated navigation bar */
 }
 
-/* Add this CSS for the animated effect */
 .animated-nav-link {
-  color: #008000 !important; /* Adjust the color as needed */
-  /* Add any other styling for the animated nav links */
-  transition: color 0.3s ease-in-out; /* Adjust the transition properties as needed */
+  color: #008000 !important;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Add this CSS for highlighting the active link */
 .nav-link.active {
-  color: #008000 !important; /* Adjust the color as needed */
-  /* Add any other styling for the active nav link */
+  color: #008000 !important; 
 }
 
 
@@ -51,14 +45,9 @@ html {
     transform: translate(-50%, -50%);
     color: white;
 }
-
-/* spacing on all sections */
-/* #about, #services, #portfolio, #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
-} */
 #contact {
-    padding-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 /* about section image css */
 .imageAboutPage {
